@@ -86,6 +86,14 @@
   }
 }
 
+.screen.active .intro__message {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in-top;
+  animation-duration: 0.5s;
+  animation-delay: 0.4s;
+}
+
 .intro__message {
   flex: none;
   width: 50.9rem;
