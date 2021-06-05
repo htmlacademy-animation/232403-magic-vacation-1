@@ -269,6 +269,7 @@
     &.active {
       &::after {
         display: block;
+        width: 100%;
       }
     }
 
@@ -280,7 +281,6 @@
       &::after {
         left: 0;
         width: 100%;
-        opacity: 1;
         background-color: $c-purple;
       }
     }
