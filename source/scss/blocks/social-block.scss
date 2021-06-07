@@ -30,7 +30,9 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -49,7 +51,9 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
-    transition: all 0.3s ease;
+    transition-property: width, height, border-color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
   }
 
   svg {
@@ -202,7 +206,9 @@
   border-radius: 50%;
   opacity: 0;
   transform: translateY(7px);
-  transition: all 0.3s ease;
+  transition-property: color, transform, opacity, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 
   @media (min-width: $stop-scaling) {
     width: 40px;

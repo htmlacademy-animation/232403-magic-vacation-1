@@ -99,7 +99,9 @@
   .active & {
     opacity: 1;
     transform: translateY(0);
-    transition: 0.5s ease-in-out;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
   }
 
   @media (min-width: $stop-scaling) {
